@@ -1,0 +1,120 @@
+/* 
+CONTAINER
+    CARD
+        TEXT
+        ICONS
+            ICONS-LEFT
+            ICONS-RIGHT
+        CARD-FOOTER
+
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    padding:0px;
+    margin:0px;
+    font-family: serif;
+}
+.container{
+    padding:40px;
+    width:100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+hr{
+    color:hsl(215, 32%, 27%);
+}
+.card{
+    background-color: hsl(216, 50%, 16%);
+    width:330px;
+    border-radius: 20px;
+    margin:auto;
+    font-size:18px;
+    padding:.9rem;
+    box-shadow: 0px 0px 40px;
+    margin-top:20px;
+}
+.card .big-img{
+    width:100%;
+    height:300px;
+    border-radius: 5px;
+}
+.first-img{position: relative;}
+#big-img2{
+    opacity: 0;
+    position: absolute;
+    left: -1px;
+    background-color: hsl(178, 100%, 50%);
+    /* width:10px;
+    height:10px; */
+}
+/* #big-img1{
+
+} */
+.first-img #big-img1:hover{
+    opacity: .5;
+}
+.first-img #big-img2:hover{
+    opacity: .5;
+    z-index: 1;
+    cursor: pointer;
+    transition: .6s ease;
+}
+.text{
+    color:hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+.text h2:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: .6s ease;
+}
+.text p, .icons-right{
+    color:hsl(215, 32%, 27%);
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.icons-left,.icons-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.icons-left{
+    color: hsl(178, 100%, 50%);
+    align-content: center;
+}
+.icons-right img, .icons-left img{
+    margin-right:5px;
+}
+.card-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.card-footer img{
+    width:2rem;
+    border:.5px hsl(0, 0%, 100%) solid;
+    border-radius: 50%;
+    /* flex:1; */
+}
+.card-footer p{
+    color:hsl(215, 32%, 27%);
+    /* flex:3; */
+    align-self: flex-start;
+    margin-left: 10px;
+}
+.card-footer p span{
+    color:hsl(0, 0%, 100%);
+}
+.card-footer p span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: .6s ease;
+}
